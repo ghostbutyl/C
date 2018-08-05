@@ -1,14 +1,13 @@
 #include <stdio.h>
 int main()
 {
-	int i=100,sum=0;
-	while(i>=1)
+	int i=6,sum=1;
+	loop:if(i>=1)
 	{
-		sum=sum+i;
+		sum*=i;
 		i--;
-		
+		goto loop;
 	}printf("%d",sum);
-	
 
 
 
